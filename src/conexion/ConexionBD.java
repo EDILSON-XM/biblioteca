@@ -5,11 +5,12 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 /**Clase que permite conexion con la base de datos registrando un driver de  tipo MariaDB**/
+// proyecto creado pero no acorde a especificacion
 
 public class ConexionBD {
 /**Propiedades de la conexión**/
 	//cambiar el dato para conectar a otra base de datos
-	private  static String database="biblioteca";
+	private  static String database="biblioteca"; // base de datos correcta
 	private static String usuario="root";
 	private static String contraseña="";
 	private static String url="jdbc:mariadb://localhost/"+database;
@@ -35,6 +36,7 @@ public class ConexionBD {
 			//registrar el driver.Previamente habra que haber
 		//añadido el driver al proyecto(Buil path)
 			
+			// conector añadido y en la ruta de construccion
 			Class.forName("org.mariadb.jdbc.Driver");
 			//obtenemos el objeto connection de la clase
 			//DRiverManager.lANZARA UNA EXCEPTION
