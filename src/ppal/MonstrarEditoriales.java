@@ -17,7 +17,7 @@ public class MonstrarEditoriales {
 		
 		System.out.println("conectando ala base de datos...");
 		//Paso 1. Obtener la conexión
-		Connection con= conexion.getConexion();
+		Connection con= conexion.getConexion(); //conexion correcta
 		
 		
 		//Objetos nesesarios para hacer una consulta
@@ -44,6 +44,7 @@ public class MonstrarEditoriales {
 			System.out.println("cod.Editorial\tnombre\tanio");
 			
 			//Paso 4. RECOGER EL RESULTADO
+			// datos y consulta correcto
 			while(resultado.next()) {
 				int codEditorial=resultado.getInt("codEditorial");
 				String nombre=resultado.getString("nombre");
@@ -55,7 +56,7 @@ public class MonstrarEditoriales {
 			}
 			
 			
-			
+			// repositorio no creado acorde a especificacion
 			
 			
 		} catch (SQLException e) {
